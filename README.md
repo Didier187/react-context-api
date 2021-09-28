@@ -58,10 +58,10 @@ $ yarn # npm start
 5. Start consuming the context values( you exported) anywhere in your app using **useContext**
 
 ```javascript
-		import React, {useContext} from "react"
-		import {ThemeContext} from "./themeContext"
+	import React, {useContext} from "react"
+	import {ThemeContext} from "./themeContext"
 
-		function Header(props) {
+	function Header(props) {
 		const {theme} = useContext(ThemeContext)
 			return (
 				<header className={`${theme}-theme`}>
@@ -70,8 +70,9 @@ $ yarn # npm start
 			)    
 		}
 
-		export default Header
-	```
+	export default Header
+```
+
 ```javascript
 	import React, {useContext} from "react"
 	import {ThemeContext} from "./themeContext"
@@ -92,6 +93,7 @@ $ yarn # npm start
 ```
 
 6. An now your components are using **Context API**
+
 ```javascript
 	import React from "react"
 
